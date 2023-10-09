@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SoberBot</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="beer.ico" type="image/x-icon">
+  <link rel="icon" href="beer.ico" type="image/x-icon">
+</head>
+
+<body>
+  <style>
+body {
+	background-image: url("SoberBotBetaBG.png");
+        background-repeat:no-repeat;
+       background-size:cover;
+} 
+
+</style>
+  <center>
+    <br>
+    <br>
+    <img src="beer.png" alt="SoberBot">
+  <h1>SoberBot: Alcoholism Assistance Bot</h1>
+  <p>Developed By: Trentyne Morgan</p>
+  <a href="status.html">Check API Status</a>
+  </center>
+  <br>
+  <div class='wrapper'>
+    <div id="dialogue"></div>
+    <form onSubmit="return chatbot.sendMessage()">
+      <div class="text-box">
+        <input type="text" name="message" id="message" autocomplete="off" disabled placeholder="Hold on a sec while I load up...">
+        <input class="send-button" type="submit" value=">">
+      </div>
+    </form>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-chatbot/src/chatbot.js"></script>
+  <script src="code.js"></script>
+</body>
+</html>

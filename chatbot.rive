@@ -1,0 +1,75 @@
+// conversation script is below
+// "start" auto-runs to begin the bot conversation 
+
++ start 
+- Hello. I Am SoberBot! I'm here to help with any alcohol related issues. To start, we can talk about:\n
+^ "what are bad alcohol side effects" \n
+^ "what are some alcohol alternatives" \n
+^ "treatment centers near me" \n
+^ "is there someone i can talk to about my problem" \n
+
+//These below are general conversation starters/ Nothing Much
++ hello
+- Hello there!
+
++ how are you doing
+- I'm doing Alright.
+
++ im doing fine
+- That's good.
+
++ can i talk to you about my alcohol problems
+- Sure! What's on your mind?
+
+
+//Alcohol Related Questions And Stuff Goes Here
++ what are bad alcohol side effects
+- * Alcohol can make you Vomit, if you've drunk enough \n
+^ * Blackouts are more likely to occur, which can lead to dangerous behavior \n
+^ * Intense Headaches can happen, and no one likes those! \n
+^ * Diarrhea can happen and well.... Just avoid it. \n
+^ * Being drunk can impair your judgement, leading you to make less responsible choices! \n
+^ * Unconciousness can happen if you become too intoxicated. \n
+^ * Comas can happen as well which are dangerous, stay sober! \n
+
+
++ what are some alcohol alternatives
+- Club Sodas, \n
+^ Sparkling Juices and Non-Alcoholic Cocktails, \n
+^ (Mocktails) are good ones, give them a try! \n 
+
+//Treatment Recommendation Code
++ treatment centers near me
+- Here are some Treatment centers in Indianapolis<br> 
+^ <button onclick="chatbot.getReply('centera')">Cleanslate Centers</button><br>
+^ <button onclick="chatbot.getReply('centerb')">Indianapolis Drug Rehab Centers</button><br>
+^ <button onclick="chatbot.getReply('centerc')">Fairbanks</button>
+^ <button onclick="chatbot.getReply('centerd')">IU Health Addiction Treatment & Recovery Center</button>
+
++ centera
+- <a href="https://www.cleanslatecenters.com">Click Here to head to their webpage!</a>
+
++ centerb
+- <a href="https://www.addictionrehabcenters.com">Click Here to head to their webpage!</a>
+
++ centerc
+- <a href="https://www.fairbankscd.org">Click Here to head to their webpage!</a>
+
++ centerd
+- <a href="https://iuhealth.org/find-locations/iu-health-addiction-treatment-recovery-center-iu-health-methodist-hospital">Click Here to head to their webpage!</a>
+
+//SAMHSA Hotline Code
++ is there someone i can talk to about my problem
+- You can always call the SAMHSA Hotline At,
+^ 1-800-622-4357 \n
+^ They will talk to you about your issue.
+^ It's confidential, Free and open 24 Hours, 365 Days a week.
+
+//Code to catch unscripted commands/talk
++ *
+- I don't think I understand what you are saying.
+- What did you say?
+- Huh?
+
+
+
